@@ -1,19 +1,20 @@
+<app-nav-bar></app-nav-bar>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of products">
-                    <div class="card" style="height:30rem;">
+                    <div class="card" style="height:40rem;">
                         <img src="https://cdn-icons-png.flaticon.com/512/1170/1170577.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">{{i.productcode}}</h5>
-                          <p class="card-text">{{i.productname}}</p>
-                          <p class="card-text">{{i.manufacturingDate}}</p>
-                          <p class="card-text">{{i.expirydate}}</p>
-                          <p class="card-text">{{i.brand}}</p>
-                          <p class="card-text">{{i.price}}</p>
-                          <p class="card-text">{{i.sellername}}</p>
-                          <p class="card-text">{{i. distributorname}}</p>
+                          <h5 class="card-title">ProductCode :{{i.productcode}}</h5>
+                          <p class="card-text">Product Name :{{i.productname}}</p>
+                          <p class="card-text">Manufacturing Date :{{i.manufacturingDate}}</p>
+                          <p class="card-text">Expiry Date :{{i.expirydate}}</p>
+                          <p class="card-text">Brand :{{i.brand}}</p>
+                          <p class="card-text">Price :{{i.price}}</p>
+                          <p class="card-text">Seller Name :{{i.sellername}}</p>
+                          <p class="card-text">Distributor Name :{{i. distributorname}}</p>
                           
                         </div>
                       </div>
