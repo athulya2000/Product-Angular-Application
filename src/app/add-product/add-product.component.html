@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Product Code</label>
+                    <input name="productcode" [(ngModel)]="productcode" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Product Name</label>
+                    <input name="productname" [(ngModel)]="productname" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Manufacturing Date</label>
+                    <input type="date" name="manufacturingDate" [(ngModel)]="manufacturingDate" id="" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Expiry Date</label>
+                    <input type="date" name="expirydate" [(ngModel)]="expirydate" id="" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Brand</label>
+                    <input name="brand" [(ngModel)]="brand" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Price</label>
+                    <input name="price" [(ngModel)]="price" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Seller Name</label>
+                    <input name="sellername" [(ngModel)]="sellername" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Distributor Name</label>
+                    <input name="distributorname" [(ngModel)]="distributorname" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <button (click)="readValues()" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
