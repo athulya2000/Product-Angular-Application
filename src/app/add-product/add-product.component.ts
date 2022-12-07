@@ -24,6 +24,19 @@ export class AddProductComponent {
     this.api.addProduct(product).subscribe(
       (response:any)=>{
         console.log(response)
+        if (response.status=="success") {
+          alert("product added suceessfully")
+          this.productcode=""
+          this.productname=""
+          this.manufacturingDate=""
+          this.expirydate=""
+          this.brand=""
+          this.price=""
+          this.sellername=""
+          this.distributorname=""
+        } else {
+          alert("something went wrong")
+        }
       }
     )
   }
